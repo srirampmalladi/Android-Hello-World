@@ -22,14 +22,14 @@ public class HelloWorld extends Activity implements OnClickListener {
 
 	private void showDialog() {
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("I will exit now")
+        builder.setMessage("I will exit now.")
                .setCancelable(false)
-               .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+               .setPositiveButton("Ok. Bye", new DialogInterface.OnClickListener() {
                    public void onClick(DialogInterface dialog, int id) {
                         HelloWorld.this.finish();
                    }
                })
-               .setNegativeButton("Nooooooooooooooooooooo", new DialogInterface.OnClickListener() {
+               .setNegativeButton("Nooooo!!", new DialogInterface.OnClickListener() {
                    public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
                    }
